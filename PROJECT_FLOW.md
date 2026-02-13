@@ -37,6 +37,19 @@ Runtime behavior:
    - Returns response to client with `X-Cache: MISS`.
    - If method is cacheable, stores response in cache.
 
+
+            User runs command
+                  │
+                  ▼
+         cli.py  ← ENTRY POINT
+                  │
+                  ▼
+      server.py ← Starts proxy server
+                  │
+                  ▼
+   cache.py ← Stores and retrieves cached responses
+
+
 ## 3. Code-level responsibilities
 
 ### `src/caching_proxy/cli.py`
