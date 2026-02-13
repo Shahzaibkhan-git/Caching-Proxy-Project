@@ -38,15 +38,15 @@ Runtime behavior:
    - If method is cacheable, stores response in cache.
 
 
-            User runs command
-                  │
-                  ▼
-         cli.py  ← ENTRY POINT
-                  │
-                  ▼
-      server.py ← Starts proxy server
-                  │
-                  ▼
+                  User runs command
+                        │
+                        ▼
+               cli.py  ← ENTRY POINT
+                        │
+                        ▼
+            server.py ← Starts proxy server
+                        │
+                        ▼
    cache.py ← Stores and retrieves cached responses
 
 
